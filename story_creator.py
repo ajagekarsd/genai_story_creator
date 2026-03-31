@@ -21,7 +21,7 @@ def _init_llm():
 
     # initialize the LLM (same params as before). If ChatGroq required the API key explicitly, adjust here.
     _llm = ChatGroq(
-        model="qwen/qwen3-32b",
+        model="qwen/qwen3-32b", #try different models.
         temperature=1,
         max_tokens=None,
         reasoning_format="parsed",
