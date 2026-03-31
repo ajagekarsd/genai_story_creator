@@ -20,8 +20,8 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-Alternatively, you can install libs from terminal using PIP commands:
-
+Alternatively, you can install libs from terminal using PIP commands: (MacOs/Linux)
+For windows, use `pip` instead of `pip3` and adjust the commands accordingly.
 ```bash
 pip3 install streamlit
 pip3 install langchain
@@ -29,6 +29,7 @@ pip3 install langchain-community
 pip3 install langchain-groq
 pip3 install langchain-openai
 pip3 install langchain-ollama
+pip3 install python-dotenv
 ```
 verify the installation of langchain:
 ```bash
