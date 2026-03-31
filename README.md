@@ -20,6 +20,20 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+Alternatively, you can install libs from terminal using PIP commands:
+
+```bash
+pip3 install streamlit
+pip3 install langchain
+pip3 install langchain-community
+pip3 install langchain-groq
+pip3 install langchain-openai
+pip3 install langchain-ollama
+```
+verify the installation of langchain:
+```bash
+pip3 freeze| grep langchain
+```
 
 3. Add your API key to .env fie at root folder:
 
@@ -32,6 +46,8 @@ GROQ_API_KEY="your_api_key_here"
 ```bash
 streamlit run streamlit_main.py
 ```
+This will start the Streamlit server and open the app in your default web browser on localhost:8501. 
+You can then enter a short topic (up to 5 letters) and click "Generate Story" to see the generated story based on that topic.
 
 Notes
 - The code uses lazy imports for the LLM-related packages so the UI can load without those dependencies installed; however, to actually generate a story you must install the LLM client packages (see `requirements.txt`) and set `GROQ_API_KEY`.

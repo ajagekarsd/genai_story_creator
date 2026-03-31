@@ -19,7 +19,6 @@ def _init_llm():
     if not api_key:
         raise ValueError("GROQ_API_KEY environment variable not set. Set it before calling create_story().")
 
-
     # initialize the LLM (same params as before). If ChatGroq required the API key explicitly, adjust here.
     _llm = ChatGroq(
         model="qwen/qwen3-32b",
@@ -32,16 +31,10 @@ def _init_llm():
     )
     return _llm
 
+
 template_string = "Write a short story about a {topic}, write max 5 lines"
 
 def create_story(topic: str) -> str:
-    """Generate a short story for the given topic.
-
-    Inputs:
-    - topic: a short string (expected <= 5 letters based on the UI)
-
-    Returns the story text, or raises a ValueError if the API key is missing.
-    """
     if not topic:
         raise ValueError("Topic must be a non-empty string")
 
