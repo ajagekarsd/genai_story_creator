@@ -56,3 +56,6 @@ Notes
 - login to groq and create an API key here: https://console.groq.com/keys
 - refer - lang chain example here: https://docs.langchain.com/oss/python/integrations/chat/groq
 
+5. About Me.
+ - Sunil Ajagekar
+ - Software/AI Engineer | AI/ML Enthusiast | Tech Blogger

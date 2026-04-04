@@ -4,9 +4,8 @@ import streamlit as st
 DEFAULTS = {
     "user_name": "Sunil Ajagekar",
     "profile_pic": "",  # URL to profile image; leave empty to use a placeholder
-    "linkedin_url": "hwww.linkedin.com/in/ajagekar-s198925",
+    "linkedin_url": "www.linkedin.com/in/ajagekar-s198925",
     "github_url": "https://github.com/ajagekarsd",
-    "email": "ajagekar.s.d@gmail.com",
     "bio": "With over 14 years of experience in software product development, specializing in Java and related technologies, my experience with cloud technologies and emerging fields such as Artificial Intelligence (AI) and Machine Learning (ML) positions me well to drive innovation and help build a robust, future-ready organization.",
 }
 
